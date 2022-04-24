@@ -1,0 +1,58 @@
+/*Syntax CSS
+Selector {property: value; propertyz: value}
+*/
+
+/* the * specifies the universal selector, select all HTML elements */
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+h1, h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+}
+
+#landing {
+	/*vh - viewport height - a determined percentace of the height of the device 
+	you are viewing your webpage in*/
+	height: 80vh;
+
+	/*flexbox - display: flex - allows to arrange the elemets inside the section 
+	vertically and horizontally 
+	align-items: center - center flex items if flex items are in columns
+	justify-content - arrange items horizontally if flex items are in columns
+   */
+	display:  flex; 
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#gallery {
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.tools {
+	border:  5px solid #f2f2f2;
+	margin: 20px;
+	padding: 25px;
+	height:  200px;
+	width:  75%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
